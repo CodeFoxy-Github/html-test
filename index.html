@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button onclick="myFunction()">registerProtocolHandler</button>
+
+    <a href="codefoxy:lol">Open in "My App"</a>
+
+    <script>
+      function myFunction() {
+        navigator.registerProtocolHandler(
+          "codefoxy",
+          "https://www.google.com/search?q=%s",
+          "Google"
+        );
+      }
+    </script>
+  </body>
+</html>
